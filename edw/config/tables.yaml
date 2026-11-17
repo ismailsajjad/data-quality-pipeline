@@ -1,0 +1,10 @@
+tables:
+  - name: walmart_sales
+    source_file: Walmart_Sales.csv
+    load_type: full
+
+  - name:  customer
+    source_file: customer.csv
+    load_type: upsert
+    primary_key: [customerid]
+    delete_mode: soft        # soft | hard | none
