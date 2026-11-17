@@ -8,10 +8,6 @@ from sqlalchemy import create_engine
 CSV_PATH = Path(__file__).resolve().parent.parent / "src" / "customer.csv"
 TABLE = "raw_customer"
 
-# DB_URL = os.getenv(
-#     "DB_URL",
-#     "postgresql+psycopg2://postgres:123456@localhost:5432/dq_db",
-# )
 
 def main():
     engine = create_engine(get_engine)
