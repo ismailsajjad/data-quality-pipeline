@@ -1,0 +1,18 @@
+2026-11-17 19:25:26,059 | ERROR | Startup failed: Config file not found: D:\code\data-quality-pipeline\edw\config\tables.yaml
+2026-11-17 19:27:49,781 | ERROR | Startup failed: Config file not found: D:\code\data-quality-pipeline\edw\config\tables.yaml
+2026-11-17 19:28:14,011 | ERROR | Database connection/setup failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2026-11-17 19:28:47,328 | ERROR | Database connection/setup failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2026-11-17 19:32:24,920 | INFO | [OK]   customer (full): {'rows_read': 7043, 'inserted': 7043, 'updated': 0, 'deleted': 0}
+2026-11-17 19:32:24,929 | ERROR | [FAIL] walmart_sales: Primary key column(s) not in CSV: ['c', 'u', 's', 't', 'o', 'm', 'e', 'r', 'i', 'd']
+Traceback (most recent call last):
+  File "D:\code\data-quality-pipeline\edw\main\ingest.py", line 270, in main
+    stats = run_table(engine, table)
+  File "D:\code\data-quality-pipeline\edw\main\ingest.py", line 205, in run_table
+    raise ValueError(f"Primary key column(s) not in CSV: {missing_cols}")
+ValueError: Primary key column(s) not in CSV: ['c', 'u', 's', 't', 'o', 'm', 'e', 'r', 'i', 'd']
+2026-11-17 19:32:24,934 | INFO | Run finished: 1 succeeded, 1 failed
+2026-11-17 19:34:48,920 | INFO | [OK]   walmart_sales (full): {'rows_read': 6435, 'inserted': 6435, 'updated': 0, 'deleted': 0}
+2026-11-17 19:34:49,386 | INFO | [OK]   customer (upsert): {'rows_read': 7043, 'inserted': 0, 'updated': 0, 'deleted': 0}
+2026-11-17 19:34:49,387 | INFO | Run finished: 2 succeeded, 0 failed

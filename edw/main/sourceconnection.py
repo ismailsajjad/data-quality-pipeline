@@ -14,3 +14,5 @@ def get_engine():
         database=os.getenv("DB_NAME", "dq_db"),
     )
     return create_engine(url)
+
+# print(get_engine())
