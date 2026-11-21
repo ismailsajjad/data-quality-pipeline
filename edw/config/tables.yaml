@@ -4,7 +4,7 @@ tables:
     load_type: full
 
   - name:  customer
-    source_file: customer.csv
+    source_file: newcustomer.csv
     load_type: upsert
     primary_key: [customerid]
     delete_mode: soft        # soft | hard | none

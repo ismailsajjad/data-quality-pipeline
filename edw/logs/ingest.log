@@ -16,3 +16,9 @@ ValueError: Primary key column(s) not in CSV: ['c', 'u', 's', 't', 'o', 'm', 'e'
 2026-11-17 19:34:48,920 | INFO | [OK]   walmart_sales (full): {'rows_read': 6435, 'inserted': 6435, 'updated': 0, 'deleted': 0}
 2026-11-17 19:34:49,386 | INFO | [OK]   customer (upsert): {'rows_read': 7043, 'inserted': 0, 'updated': 0, 'deleted': 0}
 2026-11-17 19:34:49,387 | INFO | Run finished: 2 succeeded, 0 failed
+2026-11-17 19:48:04,564 | INFO | [OK]   walmart_sales (full): {'rows_read': 6435, 'inserted': 6435, 'updated': 0, 'deleted': 6435}
+2026-11-17 19:48:04,982 | INFO | [OK]   customer (upsert): {'rows_read': 7043, 'inserted': 0, 'updated': 0, 'deleted': 0}
+2026-11-17 19:48:04,984 | INFO | Run finished: 2 succeeded, 0 failed
+2026-11-17 19:50:37,569 | INFO | [OK]   walmart_sales (full): {'rows_read': 6435, 'inserted': 6435, 'updated': 0, 'deleted': 6435}
+2026-11-17 19:50:37,657 | INFO | [OK]   customer (upsert): {'rows_read': 3, 'inserted': 1, 'updated': 1, 'deleted': 7041}
+2026-11-17 19:50:37,659 | INFO | Run finished: 2 succeeded, 0 failed
